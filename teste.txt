@@ -1,0 +1,123 @@
+git init 
+- para criar um repositorio na pasta que vc ta
+
+git status 
+- pra ver o status do seu repositorio
+
+git add nome_do arquivo 
+- depois de adicionar os arquivos na sua pasta
+- pra adicionar os arquivos
+ou git add . 
+- pra adicionar todos arquivos
+
+git commit -m "mensagem pra indentificar esse salvamento" 
+- para comitar(salvar) os arquivos
+
+da pra criar um arquivo chamado .gitignore pra colocar arquivos que vc quer que o git ignore
+
+git commit -a -m "mensagem"
+- pra pular a etapa do git add
+
+git diff 
+- pra ver a ultima coisa que foi alterada antes desde a ultima vez que vc deu um git add
+
+git diff --staged
+- pra ver a ultima coisa que foi alterada antes desde a ultima vez que vc deu um git commit mas depois que vc deu um git add
+
+git log 
+- pra ver todos os commits feitos (aprece do ultimo ao primeiro)
+- ele mostra uma chave pra cada commit que serve pra voltar pra aquela versao
+
+git log -p
+- mostra oq foi feito alterado em cada arquivo
+- vai mostrando conforme vc for apertando enter e quando acabar aparece (END) e ai vc aperta q pra voltar pro terminal
+
+git log -p -1 (ou outro numero)
+- pra ver apenas o ultimo (caso seja 1)
+
+gitk
+- pra abrir uma interface melhor pra ver as diferencas dos commits
+
+git log --pretty=oneline
+pra ver so as mensagens de cada commit
+
+git commit --amend -m "nome da mensagem"
+- pra adicionar um "novo" commit a o ultimo commit que foi feito
+
+git reet HEAD nome_do_arquivo
+- pra retirar um arquivo do commit
+
+git checkout -- nome_do_arquivo
+- pra descartar as ultimas mudancas no seu diretorio de trabalho
+
+git rm nome_do_arquivo
+- pra remover um arquivo do diretorio
+
+
+
+TAGS:
+git tag -a nome_da_tag -m "mensagem"
+- para criar a tag (sempre e criada no seu commit atual)
+
+git tag 
+- para ver as tags
+
+git tag -a nome_da_tag chave -m "mensagem"
+- para criar uma tag de um commit ja feito
+
+git log --pretty=oneline 
+-para ver as chaves + as mensagens dos commits
+
+
+git show nome_da_tag
+- para ver mais informacoes sobre a tag
+
+git checkout nome_da_tag
+- vai fazer a troca dos arquivos para aquele ponteiro daquele commit inicial
+
+git checkout master
+- para voltar ao padrao de como e com o branch master do sistema
+
+git tag -d nome_da_tag
+- para deletar uma tag
+
+
+
+BRANCH:
+- permite que vc trabalhe com varias ramificacoes
+
+- branch master: branch principal
+
+git branch nome_do_branch
+- para criar o branch
+
+git checkout nome_do_branch
+- para colocar o working directory no branch
+- a partir disso pode trabalhar no ambiente normalmente
+
+
+git checkout master
+- para voltar para o branch principal
+- (git commit -a -m "mensagem") para salvar oq vc estava fazendo antes de voltar para o branch principal
+
+git checkout nome_do_branch
+- para ir para o branch
+
+git merge nome_do_branch
+- para o branch de "teste" ser implementado no branch principal
+- tem que estar no branch que e o DESTINO das alteracoes (geralmente no master)
+
+git branch -d nome_do_branch
+- para deletar o branch 
+
+
+
+
+Git em REDE LOCAL:
+(pulei essa aula pq nao e assim que a gente vai usar :)
+
+
+
+
+Git com Github - REPOSITORIOS ONLINE:
+
